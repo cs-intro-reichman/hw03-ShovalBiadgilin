@@ -52,17 +52,18 @@ public class Calendar {
 		
 		}
 		
-		if (dayOfWeek>7){ 
-			  dayOfWeek=1;
-			    if (yearToPrint==year){
-				 System.out.println(dayOfMonth + "/" + month + "/" + year+ " sunday"); 
-				}				 
-		}else { 
-		       if (yearToPrint==year){
-			   System.out.println(dayOfMonth + "/" + month + "/" + year);
-			   }
-		       
-		}
+	 if (dayOfWeek > 7) {
+            dayOfWeek = 1;
+        }
+
+        if (yearToPrint == year) {
+            if (dayOfWeek == 1) {
+                System.out.println(dayOfMonth + "/" + month + "/" + year + " Sunday");
+            } else {
+                System.out.println(dayOfMonth + "/" + month + "/" + year);
+            }
+        }
+
 		dayOfMonth++;
 		dayOfWeek++;
 		
